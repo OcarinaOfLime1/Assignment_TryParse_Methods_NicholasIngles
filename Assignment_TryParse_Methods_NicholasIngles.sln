@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment_TryParse_Methods_NicholasIngles", "Assignment_TryParse_Methods_NicholasIngles\Assignment_TryParse_Methods_NicholasIngles.csproj", "{0F53CACE-73F1-46EE-BE5E-702DAA79B084}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F53CACE-73F1-46EE-BE5E-702DAA79B084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F53CACE-73F1-46EE-BE5E-702DAA79B084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F53CACE-73F1-46EE-BE5E-702DAA79B084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F53CACE-73F1-46EE-BE5E-702DAA79B084}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A04D9A85-C9D1-43D6-939C-802A11307CE9}
+	EndGlobalSection
+EndGlobal
