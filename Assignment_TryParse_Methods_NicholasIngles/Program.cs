@@ -29,17 +29,21 @@ static void HourGlass()
     DownArrow();
     UpArrow();
 }
-
+Part3:;
 Console.Write("Input number: ");
 try
 {
-    try.Parse
+    int StarNumber = int.Parse(Console.ReadLine());
+    static void Stars(StarNumber);
+{
+    for (int i = 0; i == StarNumber; i++)
+    {
+        Console.WriteLine("*");
+    }
+}
 }
 catch
 {
-
-}
-static void Stars()
-{
-    Console.WriteLine("*");
+    Console.WriteLine("Invalid input, try again.");
+    goto Part3;
 }
