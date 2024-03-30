@@ -69,34 +69,115 @@ Multiplication(14 * (5 * 5), 5 / 3);
 
 
 LayoutSelect:
-Console.WriteLine("\n1. Row");
+Console.WriteLine("\n\n1. Row");
 Console.WriteLine("2. Column");
 Console.WriteLine("3. Row apart");
 Console.WriteLine("4. Column apart");
 Console.Write("Select star layout: ");
 string LayInput = Console.ReadLine();
-
-
-
-
-NumberSelect:
 int NumInput = 0;
-Console.Write("\nInput number: ");
-bool ParseInput = int.TryParse(Console.ReadLine(), out NumInput);
+bool ParseInput = false;
 
-if (ParseInput)
+switch (LayInput)
 {
-    Stars(NumInput);
+    case "1":
+    NumberSelect1:
+        NumInput = 0;
+        Console.Write("\nInput number: ");
+        ParseInput = int.TryParse(Console.ReadLine(), out NumInput);
+        if (ParseInput)
+        {
+            StarsRow(NumInput);
+        }
+        else
+        {
+            Console.WriteLine("\nInvalid input, try again");
+            goto NumberSelect1;
+        }
+        break;
+    case "2":
+    NumberSelect2:
+        NumInput = 0;
+        Console.Write("\nInput number: ");
+        ParseInput = int.TryParse(Console.ReadLine(), out NumInput);
+        if (ParseInput)
+        {
+            StarsColumn(NumInput);
+        }
+        else
+        {
+            Console.WriteLine("\nInvalid input, try again");
+            goto NumberSelect2;
+        }
+        break;
+    case "3":
+    NumberSelect3:
+        NumInput = 0;
+        Console.Write("\nInput number: ");
+        ParseInput = int.TryParse(Console.ReadLine(), out NumInput);
+        if (ParseInput)
+        {
+            StarsRowApart(NumInput);
+        }
+        else
+        {
+            Console.WriteLine("\nInvalid input, try again");
+            goto NumberSelect3;
+        }
+        break;
+    case "4":
+    NumberSelect4:
+        NumInput = 0;
+        Console.Write("\nInput number: ");
+        ParseInput = int.TryParse(Console.ReadLine(), out NumInput);
+        if (ParseInput)
+        {
+            StarsColumnApart(NumInput);
+        }
+        else
+        {
+            Console.WriteLine("\nInvalid input, try again");
+            goto NumberSelect4;
+        }
+        break;
+    default:
+        Console.WriteLine("\nInvalid input, try again");
+        goto LayoutSelect;
+        break;
 }
-else
+static void StarsRow(int StarAmount)
 {
-    Console.WriteLine("Invalid input, try again");
-    goto NumberSelect;
-}
-static void Stars(int StarAmount)
-{
+    Console.WriteLine("\n");
     for (int i = 0; i < StarAmount; i++)
     {
         Console.Write("*");
     }
+    Console.WriteLine("\n");
+}
+static void StarsColumn(int StarAmount)
+{
+    Console.WriteLine("\n");
+    for (int i = 0; i < StarAmount; i++)
+    {
+        Console.WriteLine("*");
+    }
+    Console.WriteLine("\n");
+}
+static void StarsRowApart(int StarAmount)
+{
+    Console.WriteLine("\n");
+    for (int i = 0; i < StarAmount; i++)
+    {
+        Console.Write("* ");
+    }
+    Console.WriteLine("\n");
+}
+static void StarsColumnApart(int StarAmount)
+{
+    Console.WriteLine("\n");
+    for (int i = 0; i < StarAmount; i++)
+    {
+        Console.WriteLine("*\n");
+    }
+    Console.WriteLine("\n");
 }
